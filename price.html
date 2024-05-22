@@ -1,0 +1,284 @@
+<html> 
+  <head> 
+   <title>лаб8</title>
+  <link rel="stylesheet" type="text/css" href="css/1.css">
+
+  <div class="header">
+    <div class="inner">
+        <a href="index.html" class="logo">
+            <img src="images index/Adidas_Logo.png" width="100px"/>
+        </a>
+    <div class="headerItems">
+        <a href="./card_0.html" class="headerItem">Коллекция</a>
+            <a href="./contact.html" class="headerItem">Наши адреса</a>
+            <a href="./index.html" class="headerItem">Главная</a>
+            <a href="./menu.html" class="headerItem">Корзина</a>
+            <a href="./price.html" class="headerItem">Прайс</a>
+    </div>
+    <div class="headerButtons">
+        <div class="headerButton">
+            <img src="images index/Adidas_Logo.png" width="100" height="67px"/>
+        </div>
+    </div>
+    </div>
+    </div>
+  </head> 
+  <body> 
+    <h1>Прайс-лист</h1> 
+    <table> 
+      <tr> 
+        <th>Название</th> 
+        <th>Цена, руб</th> 
+        <th>Категория</th> 
+        <th>Материал</th> 
+        <th>Размер</th> 
+        <th>Дополнительно</th> 
+      </tr> 
+      <script> 
+        let xmlstr = `<magmebeli> 
+            <tovar> 
+                <id>01</id>
+                <name>"Adidas" Stan Smitch</name>
+                <price>10.000</price> 
+                <kategoriya>Кроссовки персиковый цвет</kategoriya>
+                <material>Эко-кожа</material>
+                <razmer>38 - женский</razmer>
+                <dopos> Где находится, г. Москва, ул Крупская 57, д89</dopos>
+            </tovar> 
+
+            <tovar> 
+            <id>02</id>
+                <name>"Adidas" Stan Smitch</name>
+                <price>17.000</price> 
+                <kategoriya>Кроссовки розовый цвет</kategoriya>
+                <material>Эко-кожа</material>
+                <razmer>36 - женский</razmer>
+                <dopos> Где находится, г. Москва, ул Крупская 57, д89</dopos>
+            </tovar> 
+      
+            <tovar> 
+                <id>03</id>
+                <name>"Adidas" Stan Smitch</name>
+                <price>24.400</price> 
+                <kategoriya>Кроссовки пурпурный цвет</kategoriya>
+                <material>Эко-кожа</material>
+                <razmer>38  - женский</razmer>
+                <dopos> Где находится, г. Москва, ул Крупская 57, д89</dopos>
+            </tovar> 
+      
+            <tovar> 
+                <id>04</id>
+                <name>"Adidas" Stan Smitch</name>
+                <price>28.500</price> 
+                <kategoriya>Кроссовки бежевый цвет</kategoriya>
+                <material>Эко-кожа</material>
+                <razmer>35 - женский</razmer>
+                <dopos> Где находится, г. Москва, ул Крупская 57, д89</dopos>
+            </tovar> 
+      
+            <tovar> 
+                <id>05</id>
+                <name>"Adidas" Stan Smitch</name>
+                <price>26.700</price> 
+                <kategoriya>Кроссовки бордовый цвет</kategoriya>
+                <material>Эко-кожа</material>
+                <razmer>37 - женский</razmer>
+                <dopos> Где находится, г. Москва, ул Крупская 57, д89</dopos>
+            </tovar>
+
+            <tovar> 
+                <id>06</id>
+                <name>"Adidas" Stan Smitch</name>
+                <price>28.500</price> 
+                <kategoriya>Кроссовки черный цвет</kategoriya>
+                <material>Эко-кожа</material>
+                <razmer>44 - мужские</razmer>
+                <dopos> Где находится, г. Москва, ул Крупская 57, д89</dopos>
+            </tovar>
+
+            <tovar> 
+                <id>07</id>
+                <name>"Adidas" Gazelle</name>
+                <price>20.800</price> 
+                <kategoriya>Кроссовки синий цвет</kategoriya>
+                <material>Эко-кожа</material>
+                <razmer>43 - мужские</razmer>
+                <dopos> Где находится, г. Москва, ТРЦ "Ягодка" 5 этаж</dopos>
+            </tovar>
+                
+            <tovar> 
+                <id>08</id>
+                <name>"Adidas" Gazelle</name>
+                <price>33.040</price> 
+                <kategoriya>Кроссовки салатовый цвет</kategoriya>
+                <material>Эко-кожа</material>
+                <razmer>45 - мужские</razmer>
+                <dopos> Где находится, г. Москва, ТРЦ "Ягодка" 5 этаж</dopos>
+            </tovar>
+            
+            <tovar> 
+                <id>09</id>
+                <name>"Adidas" Gazelle</name>
+                <price>45.000</price> 
+                <kategoriya>Кроссовки красный цвет</kategoriya>
+                <material>Эко-кожа</material>
+                <razmer>49 - мужские</razmer>
+                <dopos> Где находится, г. Москва, ТРЦ "Ягодка" 5 этаж</dopos>
+            </tovar>
+
+            <tovar> 
+                <id>10</id>
+                <name>"Adidas" Gazelle</name>
+                <price>26.800</price> 
+                <kategoriya>Кроссовки белый цвет</kategoriya>
+                <material>Эко-кожа</material>
+                <razmer>41 - мужские</razmer>
+                <dopos> Где находится, г. Москва, ТРЦ "Ягодка" 5 этаж</dopos>
+            </tovar>
+
+            <tovar> 
+                <id>11</id>
+                <name>"Adidas" Gazelle</name>
+                <price>20.800</price> 
+                <kategoriya>Кроссовки бирюзовый цвет</kategoriya>
+                <material>Эко-кожа</material>
+                <razmer>47 - мужские</razmer>
+                <dopos> Где находится, г. Москва, ТРЦ "Ягодка" 5 этаж</dopos>
+                <dopos></dopos>
+            </tovar>
+
+            <tovar> 
+                <id>12</id>
+                <name>"Adidas" Gazelle</name>
+                <price> 48.800</price> 
+                <kategoriya>Кроссовки шоколадного цвета</kategoriya>
+                <material>Эко-кожа</material>
+                <razmer>38 - женские</razmer>
+                <dopos> Где находится, г. Москва, ТРЦ "Сокол" 2 этаж</dopos>
+                <dopos></dopos>
+            </tovar>
+
+            <tovar> 
+                <id>13</id>
+                <name>"Adidas" Gazelle</name>
+                <price> 56.300</price> 
+                <kategoriya>Кроссовки бордового цвета</kategoriya>
+                <material>Эко-кожа</material>
+                <razmer>34 - женские</razmer>
+                <dopos> Где находится, г. Москва, ТРЦ "Сокол" 2 этаж</dopos>
+                <dopos></dopos>
+            </tovar>
+
+            <tovar> 
+                <id>14</id>
+                <name>"Adidas" Terrex</name>
+                <price> 43.000</price> 
+                <kategoriya>Кроссовки Фуксия цвета</kategoriya>
+                <material>Эко-кожа</material>
+                <razmer>36 - женские</razmer>
+                <dopos> Где находится, г. Москва, ТРЦ "Сокол" 2 этаж</dopos>
+                <dopos></dopos>
+            </tovar>
+
+            <tovar> 
+                <id>15</id>
+                <name>"Adidas" Gazelle</name>
+                <price> 16.800</price> 
+                <kategoriya>Кроссовки темно_синего цвета</kategoriya>
+                <material>Эко-кожа</material>
+                <razmer>46 - мужские</razmer>
+                <dopos> Где находится, г. Москва, ТРЦ "Сокол" 2 этаж</dopos>
+            </tovar>
+
+            <tovar> 
+                <id>16</id>
+                <name>"Adidas" Gazelle</name>
+                <price> 32.000</price> 
+                <kategoriya>Кроссовки темно-зеленого цвета</kategoriya>
+                <material>Эко-кожа</material>
+                <razmer>42 - мужские</razmer>
+                <dopos> Где находится, г. Москва, ТРЦ "Сокол" 2 этаж</dopos>
+            </tovar>
+
+            <tovar> 
+                <id>17</id>
+                <name>"Adidas" Gazelle</name>
+                <price> 34.000</price> 
+                <kategoriya>Кроссовки темно-красного цвета</kategoriya>
+                <material>Эко-кожа</material>
+                <razmer>47 - мужские</razmer>
+                <dopos> Где находится, г. Москва, ТРЦ "Сокол" 2 этаж</dopos>
+                <dopos></dopos>
+            </tovar>
+
+            <tovar> 
+                <id>17</id>
+                <name>"Adidas" Gazelle</name>
+                <price> 32.000</price> 
+                <kategoriya>Кроссовки темно-зеленого цвета</kategoriya>
+                <material>Эко-кожа</material>
+                <razmer>42 - мужские</razmer>
+                <dopos> Где находится, г. Москва, ТРЦ "Сокол" 2 этаж</dopos>
+                <dopos></dopos>
+            </tovar>
+
+            <tovar> 
+                <id>18</id>
+                <name>"Adidas" Terrex</name>
+                <price> 13.000</price> 
+                <kategoriya>Кроссовки фиолетовый цвет</kategoriya>
+                <material>Эко-кожа</material>
+                <razmer>36 - женские</razmer>
+                <dopos> Где находится, г. Москва, ТРЦ "Ягодка" 5 этаж</dopos>
+                <dopos></dopos>
+            </tovar>
+
+            <tovar> 
+                <id>19</id>
+                <name>"Adidas" Terrex</name>
+                <price> 23.000</price> 
+                <kategoriya>Кроссовки серый цвет</kategoriya>
+                <material>Эко-кожа</material>
+                <razmer>36 - женские</razmer>
+                <dopos> Где находится, г. Москва, ТРЦ "Ягодка" 5 этаж</dopos>
+                <dopos></dopos>
+            </tovar>
+
+            <tovar> 
+                <id>20</id>
+                <name>"Adidas" Terrex</name>
+                <price> 27.000</price> 
+                <kategoriya>Кроссовки золотистый цвет</kategoriya>
+                <material>Эко-кожа</material>
+                <razmer>38 - женские</razmer>
+                <dopos> Где находится, г. Москва, ТРЦ "Ягодка" 5 этаж</dopos>
+                <dopos></dopos>
+            </tovar>
+          </magmebeli>`;
+      
+        let parser = new DOMParser(); 
+        let xmlDoc = parser.parseFromString(xmlstr, "text/xml"); 
+      
+        let products = xmlDoc.getElementsByTagName("tovar");
+      
+        let table = document.querySelector("table");
+      
+        for (let i = 0; i < products.length; i++) {
+          let product = products[i];
+          let name = product.getElementsByTagName("name")[0].textContent;
+          let price = product.getElementsByTagName("price")[0].textContent;
+          let category = product.getElementsByTagName("kategoriya")[0].textContent;
+          let material = product.getElementsByTagName("material")[0].textContent;
+          let size = product.getElementsByTagName("razmer")[0].textContent;
+          let additional = product.getElementsByTagName("dopos")[0].textContent;
+      
+          let newRow = document.createElement("tr");
+          newRow.innerHTML = `<td>${name}</td><td>${price}</td><td>${category}</td><td>${material}</td><td>${size}</td><td>${additional}</td>`;
+          table.appendChild(newRow);
+        }
+      </script> 
+       
+    </table> 
+    <p><a href="index.html" class="btn">Главная страница</a></p>
+  </body> 
+</html>

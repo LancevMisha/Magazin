@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="icon" href="/public/logo/logo-noback.ico">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <title>NA Sneakers</title>
+</head>
+<body>
+
+    <div class="popup">
+        <div class="popup__container" id="popup_container">
+          <div class="popup__item">
+            <h1 class="popup__title">Оформление заказа</h1>
+          </div>
+         
+         <div class="popup__item" id="popup_product_list">
+            <div class="popup__product">
+              <div class="popup__product-wrap">
+                <img
+                  src="./images/1.jpg"
+                  alt=""
+                  class="popup__product-image"
+                />
+                <h2 class="popup__product-title">
+                 
+                </h2>
+              </div>
+              <div class="popup__product-wrap">
+                <div class="popup__product-price"></div>
+                <button class="popup__product-delete">&#10006;</button>
+              </div>
+            </div>
+          </div>
+          
+          
+          
+          <div class="popup__item">
+            <div class="popup__cost">
+              <h2 class="popup__cost-title">Итого</h2>
+              <output class="popup__cost-value" id="popup_cost">0</output>
+            </div>
+            <div class="popup__cost">
+              <h2 class="popup__cost-title">Скидка</h2>
+              <output class="popup__cost-value" id="popup_discount">0</output>
+            </div>
+            <div class="popup__cost">
+              <h2 class="popup__cost-title">Итого со скидкой</h2>
+              <output class="popup__cost-value" id="popup_cost_discount"
+                >0</output
+              >
+            </div>
+          </div>
+          <button class="popup__close" id="popup_close">&#10006;</button>
+        </div>
+    </div>
+
+        <div class="header">
+        <div class="inner">
+        <a href="index.html" class="logo">
+            <img src="images index/Adidas_Logo.png"/>
+        </a>
+        <div class="headerItems">
+            <a href="./card_0.html" class="headerItem">Коллекция</a>
+            <a href="./contact.html" class="headerItem">Наши адреса</a>
+            <a href="./index.html" class="headerItem">Главная</a>
+            <a href="./menu.html" class="headerItem">Корзина</a>
+            <a href="./price.html" class="headerItem">Прайс</a>
+        </div>
+        <div class="headerButtons">
+            <div class="headerButton">
+                <img src="images index/Adidas_Logo.png" width="100" height="100"/>
+            </div>
+        </div>
+        </div>
+        </div>
+
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="overlay">
+                    <div class="image-slider">
+                        <div class="text-slider">
+                            <div class="tittle-slider">
+                                С 8 по 18 февраля при покупке трех вещей из раздела “Акции” вы получаете третью вещь в подарок!
+                            </div>
+                            <div class="description-slider">Скидка применяется к каждому третьему товару по стоимости и делится на весь чек. Товары и заказы в рамках данной акции возврату и обмену не подлежат.</div>
+                           
+                        </div>
+                        <div class="right-image">
+                            <img src="images index/девушка идет.jpg" height="400" width="400">
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="image-slider">
+                        <div class="text-slider">
+                            <div class="tittle-slider">
+                             Не упустите возможность стать частью мирового коммьюнити вместе с "Familia". Подробнее в разделе "Коллекции"
+                            </div>
+                            <div class="description-slider">Скидка применяется к каждому третьему товару по стоимости и делится на весь чек. Товары и заказы в рамках данной акции возврату и обмену не подлежат.</div>
+                           
+                        </div>
+                        <div class="right-image">
+                            <img src="images index/велосипед девушка.jpg" height="400" width="400">
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="image-slider">
+                        <div class="text-slider">
+                            <div class="tittle-slider">
+                                С 8 по 18 февраля при покупке трех вещей из раздела “Акции” вы получаете третью вещь в подарок!
+                            </div>
+                            <div class="description-slider">Скидка применяется к каждому третьему товару по стоимости и делится на весь чек. Товары и заказы в рамках данной акции возврату и обмену не подлежат.</div>
+                           
+                        </div>
+                        <div class="right-image">
+                            <img src="images index/женщина бежит.jpg" height="400" width="400">
+                        </div>
+                    </div>
+                </div>
+       
+            </div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+
+        <div class="products">
+            <div class="text">
+                <div class="name">"Шорты"</div>
+                <div class="all">Мужские</div>
+            </div>;
+            <div class="cards">
+                <a href="card_0.html">
+                <div class="card">
+                    <div class="card-photo">
+                        <img src="images index/девчачьи кроссовки 4.jpg" width="200" height="200">
+                    </div>
+                    <div class="card-text">"Adidas" зеленые </div>
+                    <div class="card-price">От 18 000 ₽ </div>
+
+                </div>
+            </a>
+                <div class="card">
+                    <div class="card-photo">
+                        <img src="images index/девчачьи кроссовки.jpg"  width="200" height="200">
+                    </div>
+                    <div class="card-text">"Adidas" черные</div>
+                    <div class="card-price">От 20 000 ₽ </div>
+
+                </div>
+                <div class="card">
+                    <div class="card-photo">
+                        <img src="images index/девчачьи кроссовки3.jpg"  width="200" height="200">
+                    </div>
+                    <div class="card-text">"Adidas" синие</div>
+                    <div class="card-price">От 25 000 ₽ </div>
+
+                </div>
+                <div class="card">
+                    <div class="card-photo">
+                        <img src="images index/девчачьи кросссы 2jpg.jpg"  width="200" height="200">
+                    </div>
+                    <div class="card-text">"Adidas" белые </div>
+                    <div class="card-price">От 23 000 ₽ </div>
+
+                </div>
+            </div>
+    </div>
+    <div class="products">
+        <div class="text">
+            <div class="name">"Джинсы"</div>
+            <div class="all">Мужские</div>
+        </div>;
+        <div class="cards">
+            <div class="card">
+                <div class="card-photo">
+                    <img src="images index/мужские кроссовки 3.jpg"  width="200" height="200">
+                </div>
+                <div class="card-text">Голубые</div>
+                <div class="card-price">От 27 000 ₽ </div>
+
+            </div>
+            <div class="card">
+                <div class="card-photo">
+                    <img src="images index/мужские кроссовки.jpg" width="265" height="265">
+                </div>
+                <div class="card-text">Серые</div>
+                <div class="card-price">От 35 000 ₽ </div>
+
+            </div>
+            <div class="card">
+                <div class="card-photo">
+                    <img src="images index/мужские кроссовки1.jpg" width="265" height="265">
+                </div>
+                <div class="card-text">Голубые</div>
+                <div class="card-price">От 30 000 ₽ </div>
+
+            </div>
+            <div class="card">
+                <div class="card-photo">
+                    <img src="images index/мужские кроссовки2.jpg" width="200" height="200">
+                </div>
+                <div class="card-text">Черные</div>
+                <div class="card-price">От 23 000 ₽ </div>
+
+            </div>
+        </div>
+</div>
+<div class="products">
+    <div class="text">
+        <div class="name">Футболки</div>
+        <div class="all">Мужские</div>
+    </div>;
+    <div class="cards">
+        <div class="card">
+            <div class="card-photo">
+                <img src="images index/дети 2.jpg"  width="200" height="200">
+            </div>
+            <div class="card-text">"Adidas" белая</div>
+            <div class="card-price">От 7 000 ₽ </div>
+
+        </div>
+        <div class="card">
+            <div class="card-photo">
+                <img src="images index/дети 3.jpg"  width="200" height="200">
+            </div>
+            <div class="card-text">"Adidas" белая в черную полоску</div>
+            <div class="card-price">От 12 000 ₽ </div>
+
+        </div>
+        <div class="card">
+            <div class="card-photo">
+                <img src="images index/дети 4.jpg"  width="200" height="200">
+            </div>
+            <div class="card-text">"Adidas" синие в белую полоску</div>
+            <div class="card-price">От 11 000 ₽ </div>
+
+        </div>
+        <div class="card">
+            <div class="card-photo">
+                <img src="images index/катя какашка.jpg"  width="140" height="140">
+            </div>
+            <div class="card-text">"Adidas" черная</div>
+            <div class="card-price">От 13 000 ₽ </div>
+
+        </div>
+    </div>
+</div>
+
+</div>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <script src="js/script.js"></script>
+
+</body>
+</html>

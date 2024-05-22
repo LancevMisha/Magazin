@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/cardStyle.css">
+    <link rel="icon" href="/public/logo/logo-noback.ico">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <title>NA Sneakers</title>
+</head>
+<body>
+
+    
+
+        <div class="header">
+        <div class="inner">
+            <a href="index.html" class="logo">
+                <img src="images index/Adidas_Logo.png"/>
+            </a>
+        <div class="headerItems">
+            <a href="./card_0.html" class="headerItem">Коллекция</a>
+            <a href="./contact.html" class="headerItem">Наши адреса</a>
+            <a href="./index.html" class="headerItem">Главная</a>
+            <a href="./menu.html" class="headerItem">Корзина</a>
+            <a href="./price.html" class="headerItem">Прайс</a>
+        </div>
+        <div class="headerButtons">
+            <div class="headerButton">
+                <img src="images index/Adidas_Logo.png" width="100" height="100"/>
+            </div>
+        </div>
+        </div>
+        </div>
+
+<div class="product-card">
+    <!-- Изображение товара -->
+    <div class="product-image">
+        <img id="mainImage" src="images cart/леопардовые 1.jpg" alt="Товар">
+        
+        <!-- Миниатюры изображений -->
+        <div class="thumbnail-container">
+            <img class="thumbnail" src="images cart/леопардовые 2.jpg" alt="Миниатюра 1" onclick="changeImage('/public/products/cards/jordan 1 2.png')">
+            <img class="thumbnail" src="images cart/леопардовые 3.jpg" alt="Миниатюра 2" onclick="changeImage('/public/products/cards/jordan 1 3.png')">
+            <img class="thumbnail" src="images cart/леопардовые 4.jpg" alt="Миниатюра 3" onclick="changeImage('/public/products/cards/jordan 1 4.png')">
+            <img class="thumbnail" src="images cart/леопардовые 5.jpg" alt="Миниатюра 4" onclick="changeImage('/public/products/cards/jordan 1 1.png')">
+        </div>
+    </div>
+    
+    <!-- Описание товара -->
+    <div class="product-description">
+        <div class="product-gender">
+            <span class="gender-label">Футболка</span>
+        </div>
+        <div class="product-title">Найк Белая</div>
+        <div class="product-price">От 35 000 руб.</div>
+        <div class="about">Футболка M NK DF TEE SSNL EXP
+            Белая футболка — это базовый элемент гардероба, который прекрасно встраивается в большинство стилей, от спортивного до casual. Она не привлекает к себе особого внимания и эффективно дополняет одежду и выступает на контрасте с более яркими частями гардероба. 3
+
+При выборе белой футболки стоит обратить внимание на следующие элементы:
+
+Ткань. Рекомендуется брать во внимание натуральные материалы (хлопок, тенсель и лиоцелл) — они позволяют коже свободно дышать. 1
+Форма, объём, длина. Наиболее актуальны футболки полуприлегающего и свободного силуэта, с объёмными рукавами средней длины (середина предплечья и ниже до локтя). 1
+Вырез горловины. Здесь следует обратить внимание на форму лица: для жёстких форм лица выбираем геометричные формы горловин, для мягких — скруглённые. 1
+Оттенок белого. Выбирайте свой оттенок белого исходя из теплоты вашей кожи: для кожи с тёплым подтоном подойдут более тёплые оттенки белого (молочный, ваниль, слоновая кость), если кожа имеет холодный подтон — смело выбирайте снежный белый цвет. 1
+        <!-- Размеры -->
+        <div class="sizes">
+            <span class="size-label">Eu</span>
+            <span class="size-label">Ru</span>
+            <span class="size-label">Us</span>
+            <span class="size-label">Uk</span>
+            <span class="size-label">Cm</span>
+        </div>
+    
+        <!-- Блоки размеров -->
+        <div class="size-details">
+            <div class="size-block eu-sizes active">
+                <span>36</span>
+                <span>37</span>
+                <span>38</span>
+                <!-- Добавьте другие размеры, если нужно -->
+            </div>
+            <div class="size-block ru-sizes">
+                <span>40</span>
+                <span>41</span>
+                <span>42</span>
+                <!-- Добавьте другие размеры, если нужно -->
+            </div>
+            <div class="size-block us-sizes">
+                <span>7</span>
+                <span>8</span>
+                <span>9</span>
+                <!-- Добавьте другие размеры, если нужно -->
+            </div>
+            <div class="size-block uk-sizes">
+                <span>6</span>
+                <span>7</span>
+                <span>8</span>
+                <!-- Добавьте другие размеры, если нужно -->
+            </div>
+            <div class="size-block cm-sizes">
+                <span>23</span>
+                <span>24</span>
+                <span>25</span>
+                <!-- Добавьте другие размеры, если нужно -->
+            </div>
+        </div>
+        <div class="attention">
+            Внимание! Количество футболок ограничено
+        </div>
+    </div>
+</div>
+
+<script>
+    function changeImage(newSrc) {
+        document.getElementById('mainImage').src = newSrc;
+    }
+</script>
+
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <script src="js/script.js"></script>
+
+
+</body>
+</html>

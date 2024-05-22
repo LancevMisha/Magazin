@@ -1,0 +1,284 @@
+/* Reset and base styles  */
+* {
+	padding: 0px;
+	margin: 0px;
+	border: none;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+/* Links */
+
+a, a:link, a:visited  {
+    text-decoration: none;
+}
+
+a:hover  {
+    text-decoration: none;
+}
+
+/* Common */
+
+aside, nav, footer, header, section, main {
+	display: block;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    font-size: inherit;
+	font-weight: inherit;
+}
+
+ul, ul li {
+	list-style: none;
+}
+
+img {
+	vertical-align: top;
+}
+
+img, svg {
+	max-width: 100%;
+	height: auto;
+}
+
+address {
+  font-style: normal;
+}
+
+/* Form */
+
+input, textarea, button, select {
+	font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+    background-color: transparent;
+}
+
+input::-ms-clear {
+	display: none;
+}
+
+button, input[type="submit"] {
+    display: inline-block;
+    box-shadow: none;
+    background-color: transparent;
+    background: none;
+    cursor: pointer;
+}
+
+input:focus, input:active,
+button:focus, button:active {
+    outline: none;
+}
+
+button::-moz-focus-inner {
+	padding: 0;
+	border: 0;
+}
+
+label {
+	cursor: pointer;
+}
+
+legend {
+	display: block;
+}
+
+
+
+.container{
+    display: flex;
+    width: 1600px;
+    margin: 0 auto;
+}
+
+.header{
+    padding: 2vw;
+    color: #FFF;
+    height: 120px;
+    display: flex;
+    width: 100%;
+    background: #72A0CB;
+    position: sticky;
+    top:0;
+    z-index: 11;
+  }
+
+  .inner{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: 0 auto;
+    gap: 10px;
+  }
+
+  .logo{
+    display: flex;
+    gap:10px;
+    align-items: center;
+    width: 90px;
+  }
+
+  .headerItems{
+    display: flex;
+    gap: 25px;
+    align-items: center;
+  }
+  
+  .headerItem{
+    text-transform: uppercase;
+    cursor: pointer;
+    padding: 0 1vw;
+    height: 100%;
+    align-items: center;
+    display: flex;
+    color: white;
+    font-family: 'inter', sans-serif;
+    font-size: 16px;
+    font-style: bold;
+    font-weight: 600;
+    line-height: normal;
+    transition: color 0.3s ease;
+  }
+  .headerItem:hover{
+    color: rgb(219, 219, 219);
+  }
+  .headerButtons{
+    display: flex;
+    align-items: center;
+    gap: 1vw;
+    cursor: pointer;
+  }
+
+
+
+.swiper-container{
+    margin: auto;
+    overflow: hidden;
+    background: rgb(114,160,203);
+    background: linear-gradient(180deg, rgba(114,160,203,1) 0%, rgba(151,194,234,1) 18%, rgba(223,233,243,1) 92%, rgba(238,245,252,1) 100%, rgba(255,255,255,1) 990%);
+}
+.image-slider{
+    text-align: center;
+    display: flex;
+    width: 100%;
+    height: 700px;
+    padding: 40px 90px;
+}
+
+.text-slider{
+    text-align: left;
+    font-family: 'inter', sans-serif;
+    font-weight: bold;
+    color: white;
+    font-size: 36px;
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    margin: auto 0;
+
+}
+
+.tittle-slider{
+    padding: 0 0 30px 0;
+}
+.description-slider{
+    font-size: 20px;
+    font-weight: 300;
+}
+.right-image{
+    padding: 0 0 0 2em;
+    display: flex;
+    pointer-events: none;
+    margin: auto;
+}
+
+
+.swiper-container .swiper-button-prev::after,
+.swiper-container .swiper-button-next::after{
+    color: white;
+}
+.swiper-pagination {
+    position: relative;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: visible;
+}
+
+.products{
+    padding: 50px;
+    opacity: 0;
+    transform: translateY(70px);
+}
+
+.products.products-show{
+    opacity: 1;
+    transition: all 1s;
+    transform: translateY(0%);
+}
+
+.ofTittle{
+    padding: 40px 0 0 0;
+    display: flex;
+    width: 85%;
+    margin: auto;
+}
+.tittle{
+    font-size: 40px;
+    display: flex;
+    font-family: 'inter', sans-serif;
+}
+.contact{
+    margin: auto;
+    width: 90%;
+    padding: 40px 0;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.image-block{
+    display: flex;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.07); /* Тень */
+    border-radius: 8px;
+    margin: 8px;
+    flex-direction: column;
+    width: 48%;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.big-text,.small-text{
+    cursor: pointer;
+    height: 100%;
+    align-items: center;
+    display: flex;
+    font-size: 30px;
+    font-weight: 500;
+    font-family: 'inter', sans-serif;
+}
+
+.small-text{
+    font-size: 18px;
+}
+.block-image{
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    max-height: 50%;
+    max-width: 50%;
+}
+
+.map {
+    width: 100%;
+    height: 400px;
+    margin-top: 50px;
+    border-radius: 8px;
+}

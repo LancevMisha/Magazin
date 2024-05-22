@@ -1,0 +1,318 @@
+/* Reset and base styles  */
+* {
+	padding: 0px;
+	margin: 0px;
+	border: none;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+/* Links */
+
+a, a:link, a:visited  {
+    text-decoration: none;
+}
+
+a:hover  {
+    text-decoration: none;
+}
+
+/* Common */
+
+aside, nav, footer, header, section, main {
+	display: block;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    font-size: inherit;
+	font-weight: inherit;
+}
+
+ul, ul li {
+	list-style: none;
+}
+
+img {
+	vertical-align: top;
+}
+
+img, svg {
+	max-width: 100%;
+	height: auto;
+}
+
+address {
+  font-style: normal;
+}
+
+/* Form */
+
+input, textarea, button, select {
+	font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+    background-color: transparent;
+}
+
+input::-ms-clear {
+	display: none;
+}
+
+button, input[type="submit"] {
+    display: inline-block;
+    box-shadow: none;
+    background-color: transparent;
+    background: none;
+    cursor: pointer;
+}
+
+input:focus, input:active,
+button:focus, button:active {
+    outline: none;
+}
+
+button::-moz-focus-inner {
+	padding: 0;
+	border: 0;
+}
+
+label {
+	cursor: pointer;
+}
+
+legend {
+	display: block;
+}
+
+
+
+.container{
+    display: flex;
+    width: 1600px;
+    margin: 0 auto;
+}
+
+.header{
+    padding: 2vw;
+    color: #FFF;
+    height: 120px;
+    display: flex;
+    width: 100%;
+    background: #72A0CB;
+    position: sticky;
+    top:0;
+    z-index: 11;
+  }
+
+  .inner{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: 0 auto;
+    gap: 10px;
+  }
+
+  .logo{
+    display: flex;
+    gap:10px;
+    align-items: center;
+    width: 90px;
+  }
+
+  .headerItems{
+    display: flex;
+    gap: 25px;
+    align-items: center;
+  }
+  
+  .headerItem{
+    text-transform: uppercase;
+    cursor: pointer;
+    padding: 0 1vw;
+    height: 100%;
+    align-items: center;
+    display: flex;
+    color: white;
+    font-family: 'inter', sans-serif;
+    font-size: 16px;
+    font-style: bold;
+    font-weight: 600;
+    line-height: normal;
+    transition: color 0.3s ease;
+  }
+  .headerItem:hover{
+    color: rgb(219, 219, 219);
+  }
+  .headerButtons{
+    display: flex;
+    align-items: center;
+    gap: 1vw;
+    cursor: pointer;
+  }
+
+  .product-card {
+    padding: 100px;
+    display: flex;
+    justify-content: space-between; /* Добавляем это свойство */
+    overflow: hidden;
+    margin: auto;
+    gap: 10vw;
+    width: 85%; /* Ширина карточки */
+}
+
+.product-image {
+    width: 45%; /* Уменьшаем ширину для пространства между блоками */
+    position: relative;
+}
+
+.product-description{
+    display: flex;
+    flex-direction: column;
+    width: 45%; /* Уменьшаем ширину для пространства между блоками */
+}
+
+.product-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Стили для миниатюр */
+.thumbnail-container {
+    width: 30%;
+
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.thumbnail {
+    width: 10px;
+    cursor: pointer;
+    opacity: 0.7;
+    transition:  0.3s ease-in-out;
+}
+
+.thumbnail:hover {
+    opacity: 1;
+}
+
+
+.product-gender {
+    font-family: 'inter', sans-serif;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.gender-label {
+    border-radius: 10px;
+    background-color: #72A0CB;
+    color: #FFF;
+    width: auto;
+    padding: 20px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.product-title{
+    font-family: 'inter', sans-serif;
+    font-size: 24px;
+}
+.product-price{
+    font-family: 'inter', sans-serif;
+    font-size: 16px;
+
+}
+
+.about{
+    margin-top: 10px;
+    font-family: 'inter', sans-serif;
+    font-size: 16px;
+}
+.sizes {
+    margin: 20px 0 ;
+    display: flex;
+    gap: 5px;
+    margin-bottom: 10px;
+}
+
+.size-label {
+    font-family: 'inter', sans-serif;
+    cursor: pointer;
+    padding: 5px;
+    border: 1px solid #72A0CB;
+    border-radius: 4px;
+    transition: 0.3s;
+}
+
+.size-label:hover {
+    background-color: #72A0CB;
+    color: #FFF;
+    transform: scale(1.2); /* Увеличение блока на 10% */
+    transition:  0.3s ease-in-out; /* Плавное переходное масштабирование */
+}
+
+.size-details {
+    display: flex;
+    gap: 10px;
+
+}
+
+.size-block.active {
+    display: flex;
+}
+
+.size-block span {
+    cursor: pointer;
+    padding: 40px 50px; /* Увеличиваем внутренний отступ */
+    border: 1px solid #72A0CB;
+    border-radius: 5px;
+    font-size: 18px; /* Увеличиваем размер шрифта */
+}
+
+.size-block {
+    display: none;
+}
+
+.size-block.active {
+    display: block;
+}
+
+.size-block span {
+    cursor: pointer;
+    padding: 5px;
+    border: 1px solid #72A0CB;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.size-block span:hover {
+    background-color: #72A0CB;
+    color: #FFF;
+    transform: scale(1.2); /* Увеличение блока на 10% */
+
+}
+
+.attention {
+    background-color: rgb(255,209,190);
+    text-align: center;
+    margin-top: auto;
+    width: 100%;
+    border-radius: 10px;
+    padding: 20px;
+    font-family: 'inter', sans-serif;
+    font-size: 14px;
+    color: #333;
+    margin-right: 20px; /* Добавим немного отступа справа */
+}
+
+
